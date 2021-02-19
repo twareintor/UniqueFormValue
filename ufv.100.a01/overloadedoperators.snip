@@ -1,0 +1,17 @@
+
+
+/** overloading operators: no more needed; friends in "CValue" class definition */
+/********** 
+namespace
+{
+ 
+ DOUBLE operator+(CONST DOUBLE x, CONST CValue& v){return x+g_testValue.GetVARIANT().dblVal;}
+ DOUBLE operator-(CONST DOUBLE x, CONST CValue& v){return x-g_testValue.GetVARIANT().dblVal;}
+ DOUBLE operator*(CONST DOUBLE x, CONST CValue& v){return x*g_testValue.GetVARIANT().dblVal;}
+ DOUBLE operator/(CONST DOUBLE x, CONST CValue& v){return x*g_testValue.GetVARIANT().dblVal;}
+ LONG operator%(CONST LONG x, CONST CValue& v){return x%g_testValue.GetVARIANT().lVal;}
+ BOOL operator&&(CONST BOOL b, CONST CValue& v){return b&&g_testValue.GetVARIANT().boolVal;}
+ BOOL operator||(CONST BOOL b, CONST CValue& v){return b||g_testValue.GetVARIANT().boolVal;}
+
+} // used for overloading basic operator on CValue
+********/
